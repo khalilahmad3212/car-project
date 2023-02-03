@@ -4,6 +4,7 @@ import Footer from "../../components/Generic/Footer";
 import Navbar from "../../components/Generic/Navbar";
 import CarData from "../../components/product/CarData";
 import TopBar from "../../components/home/TopBar";
+import ProductSlider from "../../components/product/ProductSlider";
 
 function Product() {
 
@@ -15,6 +16,7 @@ function Product() {
     <>
       <TopBar />
       <Navbar />
+      <ProductSlider />
       <CarData />
       <Footer />
     </>
