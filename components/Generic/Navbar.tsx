@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <>
-      <section className="relative mx-auto max-w-[1440px]">
+      <section className="relative mx-auto max-w-[1400px]">
         <nav className="flex justify-between bg-gray-white text-black pr-3">
           <div className="px-5 xl:px-12 py-6 flex w-full items-center">
             <Link className="text-3xl font-bold font-heading" href="/">

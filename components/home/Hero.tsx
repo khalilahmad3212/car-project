@@ -52,12 +52,12 @@ function Hero() {
         {/* Right Section of the hero */}
         <div className="md:w-1/2 flex gap-3 mt-10 md:mt-0">
             <div className="flex flex-col gap-4">
-                <Image src={hero_image_1} alt="car image" width={200} height={100}/>
-                <Image src={hero_image_2} alt="car image" width={200} height={100}/>
+                <Image src={hero_image_1} alt="car image" width={266} height={100}/>
+                <Image src={hero_image_2} alt="car image" width={266} height={100}/>
             </div>
             <div className="flex flex-col gap-2">
-            <Image src={hero_image_3} alt="car image" width={300} height={100}/>
-                <Image src={hero_image_4} alt="car image" width={300} height={100}/>
+            <Image src={hero_image_3} alt="car image" width={400} height={100}/>
+                <Image src={hero_image_4} alt="car image" width={400} height={100}/>
             </div>
         </div>
       </div>

@@ -15,6 +15,7 @@ import right_arrow from "/public/images/arrow_right.svg";
 const inter = Inter({ subsets: ["latin"] });
 
 import client from "../client";
+import Testimonial from "../components/home/Testimonial";
 
 export default function Home({ cars_data }) {
   return (
@@ -35,6 +36,7 @@ export default function Home({ cars_data }) {
         <Cars cars_data={cars_data} />
       </div>
       <Process />
+      <Testimonial />
       <Banner />
       <Footer />
     </>

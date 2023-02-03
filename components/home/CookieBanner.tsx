@@ -7,7 +7,7 @@ import cross from "/public/images/cross.svg";
 
 function CookieBanner() {
   return (
-    <div className="hidden md:flex flex-row justify-between max-w-[1520px] py-4 px-20 mx-auto shadow-lg">
+    <div className="hidden md:flex flex-row justify-between max-w-[1400px] py-4 px-20 mx-auto shadow-lg">
       <div className="w-1/2 flex gap-6 text-md text-gray-600">
         <Image src={cookie} alt="cookie" width={50} height={10} />
         <p>
@@ -16,7 +16,7 @@ function CookieBanner() {
           <a href="#">Learn more</a>
         </p>
       </div>
-      <div className="w-1/2 flex flex-row pl-20 gap-5">
+      <div className="w-1/2 flex flex-row justify-end gap-5">
         <button className="bg-primary text-white py-2 px-12 rounded-full">
           Accept
         </button>
