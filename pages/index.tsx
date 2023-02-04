@@ -33,7 +33,7 @@ export default function Home({ cars_data }) {
             <Image src={right_arrow} alt="icon" width={20} height={10} />
           </button>
         </div>
-        <Cars cars_data={cars_data} />
+        <Cars cars_data={cars_data.slice(0, 3)} />
       </div>
       <Process />
       <Testimonial />

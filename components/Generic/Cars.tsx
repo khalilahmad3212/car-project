@@ -8,7 +8,7 @@ function Cars({ cars_data }) {
   return (
     <div className="max-w-[1440px] mx-auto pt-24 md:px-5">
       <div className="grid grid-cols-1 md:lg:xl:grid-cols-3 mt-16 gap-8 md:px-12">
-        {cars_data.slice(0, 3).map(({ imageUrl, title }) => {
+        {cars_data.map(({ imageUrl, title }) => {
             
           return(
           <div

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 
@@ -33,7 +34,12 @@ function Dropdown() {
       <a
         className=" flex items-center"
         href="#"
-        onClick={() => setisOpen(!isOpen)}
+        onClick={() => {
+          setisOpen(!isOpen);
+          setTimeout(() => (
+            setisOpen(false)
+          ), 2000)
+        }}
       >
         Products
         <IoMdArrowDropdown className="text-xl" />
@@ -46,11 +52,11 @@ function Dropdown() {
       >
         <ul className=" z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow ">
           {dropdownItems.map(({ content, image }) => (
-            <li key={content}>
-              <a href="#" className="flex gap-4 py-2 px-4 hover:bg-gray-100">
+            <li key={content} className="hover:bg-secondary">
+              <Link href="#" className="flex gap-4 py-2 px-4 hover:bg-gray-100">
                 <Image src={image} width={30} height={10} alt="icon car" />
                 <span className="text-sm">{content}</span>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

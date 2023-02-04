@@ -9,6 +9,7 @@ import TopBar from '../../components/home/TopBar'
 
 
 import client from '../../client';
+import Check from '../../components/categary/pagination/Check'
 
 function Categary({ cars_data }) {
   return (
@@ -19,6 +20,7 @@ function Categary({ cars_data }) {
         <NavigationAndFilter />
         <Cars cars_data={cars_data}/>
         <Pagignation />
+        <Check />
         <Footer />
     </>
   )
@@ -49,7 +51,7 @@ export async function getStaticProps(context) {
     "imageUrl": car_image.asset->url
   }`);
 
-  console.log('Images recieved: ', cars_data.length);
+  console.log('carData: : : ', cars_data.length);
   
   console.log('\n\nCars: ', cars_data);
     
